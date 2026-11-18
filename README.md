@@ -55,22 +55,21 @@ SQL-E-Commerce-Data-Analysis
 
 ## 🔍 Key Business Questions
 
+
 # 1. Display the top 10 most expensive items from order_details, ordered from highest to lowest.
 select * from order_details order by amount desc limit 10;
 
 **Purpose:** Identifies the Top 10 Most Expensive Items
 **Result:**
-<img width="676" height="358" alt="Business qn1" src="https://github.com/user-attachments/assets/0d9a5586-a648-407c-84e0-e128734e0e52" />
+<img width="676" height="358" alt="Business qn1" src="https://github.com/user-attachments/assets/3d23825a-67af-4280-826f-8d1812a9d031" />
 
 
-# 4. Find all records in order_details that resulted in a financial loss (Profit is negative) and had a Quantity of at least 5.
+# 2. Find all records in order_details that resulted in a financial loss (Profit is negative) and had a Quantity of at least 5.
 select * from order_details where Profit<0 and Quantity>=5;
 
 **Purpose:** Identifies the Products Resulting in Financial Loss
 **Result:**
-
-<img width="693" height="412" alt="Business qn2" src="https://github.com/user-attachments/assets/7e8b9285-a20a-4832-bfe9-ee44163dbddc" />
-
+<img width="693" height="412" alt="Business qn2" src="https://github.com/user-attachments/assets/2eb9b4eb-d92e-4e04-bf5c-0ce05161324c" />
 
 
 
@@ -84,8 +83,7 @@ order by total_amount desc;
 
 **Purpose:** Identifies State-wise Sales Performance
 **Result:**
-<img width="385" height="398" alt="Business qn3" src="https://github.com/user-attachments/assets/ac64b1de-855e-4fc0-b038-70299135db6d" />
-
+<img width="385" height="398" alt="Business qn3" src="https://github.com/user-attachments/assets/04fb0089-92ad-4226-9efa-65340e4f8f95" />
 
 # 4. Find the total Profit for each State and Category combination, showing only the combinations that resulted in an overall net loss.
 select l.State,o.Category, sum(o.Profit) as total
@@ -97,8 +95,7 @@ having total<0;
 
 **Purpose:** Identifies State and Category-wise Loss Analysis
 **Result:**
-
-<img width="417" height="333" alt="Business qn4" src="https://github.com/user-attachments/assets/50faba42-f6d2-42b6-b2c3-7c31eb43c07a" />
+<img width="417" height="333" alt="Business qn4" src="https://github.com/user-attachments/assets/5c339900-7777-4b98-8fef-da9744f01e80" />
 
 #5.Rank each sub_category within its respective Category based on total Profit (from highest to lowest), displaying Category, sub_category, total_profit, and profit_rank.
 
@@ -108,5 +105,5 @@ group by Category, sub_category;
 
 **Purpose:** Identifies Sub-category Profitability Ranking
 **Result:**
+<img width="479" height="364" alt="Business qn5" src="https://github.com/user-attachments/assets/446d79db-ecb0-4d3e-ae08-2cd63c8a6560" />
 
-<img width="479" height="364" alt="Business qn5" src="https://github.com/user-attachments/assets/79de0b39-23b2-49e4-ba4a-875db1f51b3b" />
