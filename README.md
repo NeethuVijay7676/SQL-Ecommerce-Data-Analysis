@@ -28,7 +28,7 @@ SQL-E-Commerce-Data-Analysis
 │
 ├── README.md
 │
-├── schema/
+├── SChema/
 │   └── Data_Preprocessing.sql
 │
 ├── Datasets/
@@ -36,7 +36,7 @@ SQL-E-Commerce-Data-Analysis
 │   └── Order details.csv
 │   └── Sales Target.csv
 
-├── queries/
+├── Queries/
 │   ├── Beginner_Queries.sql
 │   ├── Intermediate_Queries.sql
 │   └── Advanced_Queries.sql
