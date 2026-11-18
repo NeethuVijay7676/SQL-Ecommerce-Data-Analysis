@@ -36,9 +36,9 @@ The project uses three related datasets:
 7. Performed basic data cleaning, including handling missing data.
 ## SQL Analysis
 
-The project includes 30 SQL questions divided into three levels.
+The project includes SQL questions divided into three levels.
 
-### Beginner Level (10 Questions)
+### Beginner Level 
 
 - Data retrieval and filtering
 - WHERE, IN, BETWEEN, LIKE
@@ -46,7 +46,7 @@ The project includes 30 SQL questions divided into three levels.
 - DISTINCT
 - Basic sorting and filtering
 
-### Intermediate Level (10 Questions)
+### Intermediate Level 
 
 - Aggregate functions (SUM, AVG, COUNT)
 - GROUP BY and HAVING
@@ -55,7 +55,7 @@ The project includes 30 SQL questions divided into three levels.
 - Customer and category analysis
 - Sub-category profitability analysis
 
-### Advanced Level (10 Questions)
+### Advanced Level 
 
 - Subqueries
 - Common Table Expressions (CTEs)
