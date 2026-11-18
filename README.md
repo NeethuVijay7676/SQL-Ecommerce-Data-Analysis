@@ -95,7 +95,7 @@ Through this project, I gained practical experience in:
 
 ## Project Files
 1. Datasets/Original CSV datasets.
-2. Queries/Data_Preprocessings.sql
+2. Queries/Data_Preprocessing.sql
 3. Queries/Beginner_Queries.sql
 4. Queries/Intermediate_Queries.sql
 5. Queries/Advanced_Queries.sql
