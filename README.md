@@ -11,8 +11,11 @@ SQL analysis of an e-commerce platform's customer orders, sales performance, pro
 ## 📊 Dataset Source
 
 The original datasets were imported into MySQL. The project uses three related datasets:
+
 List_of_order – contains order ID, order date, customer name, state, city
+
 Order details -contains order ID, amount, profit, quantity, category, sub-category
+
 Sales target- contains month of order date, category, target
 
 **Dataset Source:** 
