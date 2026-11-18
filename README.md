@@ -131,3 +131,27 @@ group by Category, sub_category;
 
 <img width="479" height="364" alt="Business qn5" src="https://github.com/user-attachments/assets/6ca2452b-c53f-4b06-83f7-180c0c025aa1" />
 
+
+## 📚 What I Learned
+
+Through this project, I practiced SQL concepts for analysing real-world e-commerce data and answering business-related questions. I learned how to use joins, aggregate functions, grouping, filtering, views,ranking and stored procedures to extract useful insights from relational data.
+
+## 📌 SQL Concepts Practiced
+
+* `select`
+* `where`
+* `order by`
+* `group by`
+* `having`
+* `joins`
+* `sum()`
+* `avg()`
+* `count()`
+* `max()`
+* Subqueries
+* Views
+* Stored procedures
+* Date filtering
+
+
+
