@@ -118,7 +118,9 @@ having total<0;
 
 ### 5. Rank each sub_category within its respective Category based on total Profit (from highest to lowest), displaying Category, sub_category, total_profit, and profit_rank.
 
-select Category, sub_category, sum(profit) as total_profit, rank() over(partition by category order by sum(profit) desc) as profit_rank 
+select Category, sub_category, sum(profit) as total_profit, 
+
+rank() over(partition by category order by sum(profit) desc) as profit_rank 
 
 from order_details
 
