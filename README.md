@@ -60,12 +60,14 @@ select * from order_details order by amount desc limit 10;
 
 **Purpose:** Identifies the Top 10 Most Expensive Items
 **Result:**
+<img width="676" height="358" alt="Business qn1" src="https://github.com/user-attachments/assets/34186017-70ac-4e31-88ec-74534a6f9388" />
 
 ### 2. Find all records in order_details that resulted in a financial loss (Profit is negative) and had a Quantity of at least 5.
 
 select * from order_details where Profit<0 and Quantity>=5;
 **Purpose:** Identifies the Products Resulting in Financial Loss
 **Result:**
+<img width="693" height="412" alt="Business qn2" src="https://github.com/user-attachments/assets/ddcb2d6e-9314-4f28-8115-dd134d2a6ef9" />
 
 
 
@@ -79,6 +81,9 @@ group by l.State
 order by total_amount desc; 
 **Purpose:** Identifies State-wise Sales Performance
 **Result:**
+
+<img width="385" height="398" alt="Business qn3" src="https://github.com/user-attachments/assets/8bb55ef3-a7c2-4856-9b75-d0543c29b122" />
+
 ### 4. Find the total Profit for each State and Category combination, showing only the combinations that resulted in an overall net loss.
 select l.State,o.Category, sum(o.Profit) as total
 from list_of_orders as l
@@ -89,6 +94,8 @@ having total<0;
 **Purpose:** Identifies State and Category-wise Loss Analysis
 **Result:**
 
+<img width="417" height="333" alt="Business qn4" src="https://github.com/user-attachments/assets/fe5c95b4-4fb7-438a-a572-36adec7dec77" />
+
 ### 5. Rank each sub_category within its respective Category based on total Profit (from highest to lowest), displaying Category, sub_category, total_profit, and profit_rank.
 select Category, sub_category, sum(profit) as total_profit, rank() over(partition by category order by sum(profit) desc) as profit_rank 
 from order_details
@@ -98,4 +105,5 @@ group by Category, sub_category;
 **Result:**
 
 
+<img width="479" height="364" alt="Business qn5" src="https://github.com/user-attachments/assets/6ca2452b-c53f-4b06-83f7-180c0c025aa1" />
 
