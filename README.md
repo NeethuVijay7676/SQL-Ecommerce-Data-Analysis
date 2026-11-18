@@ -99,6 +99,7 @@ Through this project, I gained practical experience in:
 3. Queries/Beginner_Queries.sql
 4. Queries/Intermediate_Queries.sql
 5. Queries/Advanced_Queries.sql
+
 File 2 should be executed first, followed by Files 3, 4 and 5.
 
 
