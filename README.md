@@ -62,6 +62,7 @@ select * from order_details order by amount desc limit 10;
 
 # 4. Find all records in order_details that resulted in a financial loss (Profit is negative) and had a Quantity of at least 5.
 select * from order_details where Profit<0 and Quantity>=5;
+
 **Purpose:** Identifies the Products Resulting in Financial Loss
 **Result:**
 
@@ -77,6 +78,7 @@ inner join order_details as o
 on l.order_id=o.order_id
 group by l.State
 order by total_amount desc; 
+
 **Purpose:** Identifies State-wise Sales Performance
 **Result:**
 <img width="385" height="398" alt="Business qn3" src="https://github.com/user-attachments/assets/ac64b1de-855e-4fc0-b038-70299135db6d" />
@@ -89,12 +91,14 @@ inner join order_details as o
 on l.order_id=o.order_id
 group by l.State,o.Category
 having total<0;
+
 **Purpose:** Identifies State and Category-wise Loss Analysis
 **Result:**
 
 <img width="417" height="333" alt="Business qn4" src="https://github.com/user-attachments/assets/50faba42-f6d2-42b6-b2c3-7c31eb43c07a" />
 
 #5.Rank each sub_category within its respective Category based on total Profit (from highest to lowest), displaying Category, sub_category, total_profit, and profit_rank.
+
 select Category, sub_category, sum(profit) as total_profit, rank() over(partition by category order by sum(profit) desc) as profit_rank 
 from order_details
 group by Category, sub_category;
