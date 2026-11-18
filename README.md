@@ -60,6 +60,7 @@ select * from order_details order by amount desc limit 10;
 
 **Purpose:** Identifies the Top 10 Most Expensive Items
 **Result:**
+
 <img width="676" height="358" alt="Business qn1" src="https://github.com/user-attachments/assets/34186017-70ac-4e31-88ec-74534a6f9388" />
 
 ### 2. Find all records in order_details that resulted in a financial loss (Profit is negative) and had a Quantity of at least 5.
@@ -67,6 +68,7 @@ select * from order_details order by amount desc limit 10;
 select * from order_details where Profit<0 and Quantity>=5;
 **Purpose:** Identifies the Products Resulting in Financial Loss
 **Result:**
+
 <img width="693" height="412" alt="Business qn2" src="https://github.com/user-attachments/assets/ddcb2d6e-9314-4f28-8115-dd134d2a6ef9" />
 
 
