@@ -55,7 +55,6 @@ SQL-E-Commerce-Data-Analysis
 
 ## 🔍 Key Business Questions
 
-
 # 1. Display the top 10 most expensive items from order_details, ordered from highest to lowest.
 select * from order_details order by amount desc limit 10;
 
