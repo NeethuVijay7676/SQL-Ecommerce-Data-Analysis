@@ -46,12 +46,6 @@ SQL-E-Commerce-Data-Analysis
 
 ```
 
-## 🔗 ER Diagram
-
- <img width="1408" height="768" alt="ER diagram" src="https://github.com/user-attachments/assets/57e9a02f-8a7b-4e8d-9d9a-242a131ef5e0" />
-
-
-
 ## 🔍 Key Business Questions
 
 ### 1. Display the top 10 most expensive items from order_details, ordered from highest to lowest.
