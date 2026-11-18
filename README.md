@@ -97,12 +97,17 @@ order by total_amount desc;
 <img width="385" height="398" alt="Business qn3" src="https://github.com/user-attachments/assets/8bb55ef3-a7c2-4856-9b75-d0543c29b122" />
 
 ### 4. Find the total Profit for each State and Category combination, showing only the combinations that resulted in an overall net loss.
+
 select l.State,o.Category, sum(o.Profit) as total
 
 from list_of_orders as l
+
 inner join order_details as o
+
 on l.order_id=o.order_id
+
 group by l.State,o.Category
+
 having total<0;
 
 **Purpose:** Identifies State and Category-wise Loss Analysis
@@ -112,8 +117,11 @@ having total<0;
 <img width="417" height="333" alt="Business qn4" src="https://github.com/user-attachments/assets/fe5c95b4-4fb7-438a-a572-36adec7dec77" />
 
 ### 5. Rank each sub_category within its respective Category based on total Profit (from highest to lowest), displaying Category, sub_category, total_profit, and profit_rank.
+
 select Category, sub_category, sum(profit) as total_profit, rank() over(partition by category order by sum(profit) desc) as profit_rank 
+
 from order_details
+
 group by Category, sub_category;
 
 **Purpose:** Identifies Sub-category Profitability Ranking
