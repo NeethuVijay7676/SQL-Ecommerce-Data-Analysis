@@ -28,7 +28,7 @@ SQL-E-Commerce-Data-Analysis
 │
 ├── README.md
 │
-├── SChema/
+├── Schema/
 │   └── Data_Preprocessing.sql
 │
 ├── Datasets/
